@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: "https://socket-front-mu.vercel.app/",
+        origin: "https://socket-front-mu.vercel.app",
         methods: ["GET", "POST", "PATCH"],
         credentials: true // Allow credentials
     }

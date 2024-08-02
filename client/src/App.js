@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 import './App.css';
 
-const ENDPOINT = 'https://socket-virid.vercel.app/';
+const ENDPOINT = 'https://socket-virid.vercel.app';
 
 const App = () => {
     const [data, setData] = useState([]);
