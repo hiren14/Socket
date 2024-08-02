@@ -9,14 +9,14 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://socket-front-mu.vercel.app/",
         methods: ["GET", "POST", "PATCH"],
         credentials: true // Allow credentials
     }
 });
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://socket-front-mu.vercel.app/",
     credentials: true
 }));
 app.use(bodyParser.json());
